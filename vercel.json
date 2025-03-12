@@ -1,0 +1,8 @@
+{
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/html/photo_pose_app_design_base.html"
+        }
+    ]
+}
