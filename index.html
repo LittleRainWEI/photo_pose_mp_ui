@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拍照姿势推荐小程序 - UI/UX设计展示</title>
+  <style>
+    body {
+      background-color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+    .screens-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .screen-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .screen-title {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #555;
+    }
+    iframe {
+      border: none;
+      width: 375px;
+      height: 812px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="screens-container">
+    <div class="screen-wrapper">
+      <div class="screen-title">首页</div>
+      <iframe src="home.html" title="首页"></iframe>
+    </div>
+    
+    <div class="screen-wrapper">
+      <div class="screen-title">随机姿势推荐</div>
+      <iframe src="random_pose.html" title="随机姿势推荐"></iframe>
+    </div>
+    
+    <div class="screen-wrapper">
+      <div class="screen-title">个人中心 (未登录)</div>
+      <iframe src="profile.html" title="个人中心"></iframe>
+    </div>
+    
+    <div class="screen-wrapper">
+      <div class="screen-title">个人中心 (已登录)</div>
+      <iframe src="profile_logged_in.html" title="个人中心-已登录"></iframe>
+    </div>
+    
+    <div class="screen-wrapper">
+      <div class="screen-title">个人设置</div>
+      <iframe src="settings.html" title="个人设置"></iframe>
+    </div>
+    
+    <div class="screen-wrapper">
+      <div class="screen-title">我的点赞</div>
+      <iframe src="my_likes.html" title="我的点赞"></iframe>
+    </div>
+  </div>
+</body>
+</html> 

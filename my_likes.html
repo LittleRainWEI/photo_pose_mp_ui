@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的点赞 - 拍照姿势推荐</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .page-header {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .back-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+    }
+    .page-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+    .likes-container {
+      padding: 0 20px 70px;
+    }
+    .likes-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .likes-count {
+      font-size: 14px;
+      color: #999;
+    }
+    .likes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    .like-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    .like-img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+    .like-info {
+      padding: 8px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .like-category {
+      font-size: 12px;
+      color: #999;
+      background-color: #f5f5f5;
+      padding: 3px 8px;
+      border-radius: 10px;
+    }
+    .like-actions {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .like-btn {
+      color: #FF6B6B;
+      font-size: 18px;
+    }
+    .like-count {
+      font-size: 12px;
+      color: #999;
+    }
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 0;
+      color: #999;
+    }
+    .empty-icon {
+      font-size: 60px;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+    .empty-text {
+      font-size: 16px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    .empty-hint {
+      font-size: 14px;
+      color: #bbb;
+    }
+    .filter-tabs {
+      display: flex;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 3px;
+      margin-bottom: 20px;
+    }
+    .filter-tab {
+      flex: 1;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 14px;
+      color: #666;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .filter-tab.active {
+      background: white;
+      color: #FF6B6B;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-mockup">
+    <div class="status-bar">
+      <span>20:30</span>
+      <div style="display: flex; gap: 4px;">
+        <span class="material-symbols-rounded" style="font-size: 16px;">wifi</span>
+        <span class="material-symbols-rounded" style="font-size: 16px;">battery_full</span>
+      </div>
+    </div>
+    
+    <div class="content-container">
+      <!-- 顶部导航 -->
+      <div class="page-header">
+        <button class="back-btn">
+          <span class="material-symbols-rounded" style="color: #333; font-size: 20px;">arrow_back</span>
+        </button>
+        <h2 class="page-title">我的点赞</h2>
+      </div>
+      
+      <!-- 点赞内容区域 -->
+      <div class="likes-container">
+        <!-- 筛选标签 -->
+        <div class="filter-tabs">
+          <div class="filter-tab active">全部</div>
+          <div class="filter-tab">女生</div>
+          <div class="filter-tab">男生</div>
+          <div class="filter-tab">情侣</div>
+        </div>
+        
+        <!-- 点赞列表头部 -->
+        <div class="likes-header">
+          <span class="likes-count">共4个点赞</span>
+        </div>
+        
+        <!-- 点赞列表 -->
+        <div class="likes-grid">
+          <!-- 点赞项1 - 女生 -->
+          <div class="like-card">
+            <img src="https://placehold.co/300x400/ffdfdc/ff6b6b?text=女生姿势" class="like-img" alt="姿势图片">
+            <div class="like-info">
+              <span class="like-category">女生</span>
+              <div class="like-actions">
+                <span class="material-symbols-rounded like-btn">favorite</span>
+                <span class="like-count">328</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 点赞项2 - 男生 -->
+          <div class="like-card">
+            <img src="https://placehold.co/300x400/e3f2fd/2196f3?text=男生姿势" class="like-img" alt="姿势图片">
+            <div class="like-info">
+              <span class="like-category">男生</span>
+              <div class="like-actions">
+                <span class="material-symbols-rounded like-btn">favorite</span>
+                <span class="like-count">189</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 点赞项3 - 情侣 -->
+          <div class="like-card">
+            <img src="https://placehold.co/300x400/f3e5f5/9c27b0?text=情侣姿势" class="like-img" alt="姿势图片">
+            <div class="like-info">
+              <span class="like-category">情侣</span>
+              <div class="like-actions">
+                <span class="material-symbols-rounded like-btn">favorite</span>
+                <span class="like-count">536</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 点赞项4 - 团体 -->
+          <div class="like-card">
+            <img src="https://placehold.co/300x400/e8f5e9/4caf50?text=团体姿势" class="like-img" alt="姿势图片">
+            <div class="like-info">
+              <span class="like-category">团体</span>
+              <div class="like-actions">
+                <span class="material-symbols-rounded like-btn">favorite</span>
+                <span class="like-count">412</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 空状态（当没有点赞时显示）
+        <div class="empty-state">
+          <span class="material-symbols-rounded empty-icon">favorite</span>
+          <p class="empty-text">暂无点赞内容</p>
+          <p class="empty-hint">浏览首页，发现喜欢的姿势吧</p>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

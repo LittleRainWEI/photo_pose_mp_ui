@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人中心 - 拍照姿势推荐</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="phone-mockup">
+    <div class="status-bar">
+      <span>20:30</span>
+      <div style="display: flex; gap: 4px;">
+        <span class="material-symbols-rounded" style="font-size: 16px;">wifi</span>
+        <span class="material-symbols-rounded" style="font-size: 16px;">battery_full</span>
+      </div>
+    </div>
+    
+    <div class="content-container">
+      <!-- 个人信息区域 -->
+      <div class="profile-header" style="margin-bottom: 16px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+          <h2 style="font-size: 18px; font-weight: bold; color: white; margin: 0;">个人中心</h2>
+          <button style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; border: none; cursor: pointer;">
+            <span class="material-symbols-rounded" style="color: white; font-size: 20px;">settings</span>
+          </button>
+        </div>
+        
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center;">
+            <span class="material-symbols-rounded" style="color: white; font-size: 32px;">person</span>
+          </div>
+          <div>
+            <button style="background: rgba(255,255,255,0.2); backdrop-filter: blur(4px); padding: 6px 14px; border-radius: 9999px; color: white; font-weight: 500; font-size: 14px; border: none; cursor: pointer;">
+              点击登录
+            </button>
+            <p style="color: rgba(255,255,255,0.8); font-size: 12px; margin-top: 6px; margin-bottom: 0;">登录后享受更多功能</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 功能区域 - 简化为三个入口 -->
+      <div style="padding: 0 20px; padding-bottom: 70px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="feature-card" style="padding: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 42px; height: 42px; border-radius: 50%; background: #FFE5E5; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                  <span class="material-symbols-rounded" style="color: #FF6B6B; font-size: 22px;">favorite</span>
+                </div>
+                <div>
+                  <h4 style="font-weight: 500; color: #333; margin: 0 0 2px 0; font-size: 15px;">我的点赞</h4>
+                  <p style="font-size: 12px; color: #777; margin: 0;">查看已点赞的姿势</p>
+                </div>
+              </div>
+              <span class="material-symbols-rounded" style="color: #ccc; font-size: 20px;">chevron_right</span>
+            </div>
+          </div>
+          
+          <div class="feature-card" style="padding: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 42px; height: 42px; border-radius: 50%; background: #E5F9FF; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                  <span class="material-symbols-rounded" style="color: #4FC3F7; font-size: 22px;">support_agent</span>
+                </div>
+                <div>
+                  <h4 style="font-weight: 500; color: #333; margin: 0 0 2px 0; font-size: 15px;">联系客服</h4>
+                  <p style="font-size: 12px; color: #777; margin: 0;">有问题随时联系我们</p>
+                </div>
+              </div>
+              <span class="material-symbols-rounded" style="color: #ccc; font-size: 20px;">chevron_right</span>
+            </div>
+          </div>
+          
+          <div class="feature-card" style="padding: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 42px; height: 42px; border-radius: 50%; background: #E8F5E9; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                  <span class="material-symbols-rounded" style="color: #66BB6A; font-size: 22px;">info</span>
+                </div>
+                <div>
+                  <h4 style="font-weight: 500; color: #333; margin: 0 0 2px 0; font-size: 15px;">关于我们</h4>
+                  <p style="font-size: 12px; color: #777; margin: 0;">了解更多关于我们的信息</p>
+                </div>
+              </div>
+              <span class="material-symbols-rounded" style="color: #ccc; font-size: 20px;">chevron_right</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="tabbar" style="display: flex; justify-content: space-around; align-items: center;">
+      <button style="display: flex; flex-direction: column; align-items: center; background: none; border: none; cursor: pointer;">
+        <span class="material-symbols-rounded" style="color: #999;">home</span>
+        <span style="font-size: 12px; margin-top: 2px; color: #999;">首页</span>
+      </button>
+      <button style="display: flex; flex-direction: column; align-items: center; position: relative; background: none; border: none; cursor: pointer;">
+        <div class="inspiration-btn" style="width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: -20px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+          <span class="material-symbols-rounded" style="color: white; font-size: 28px;">auto_awesome</span>
+        </div>
+        <span style="font-size: 12px; margin-top: 2px; color: #999;">灵感</span>
+      </button>
+      <button style="display: flex; flex-direction: column; align-items: center; background: none; border: none; cursor: pointer;">
+        <span class="material-symbols-rounded" style="color: #FF6B6B;">person</span>
+        <span style="font-size: 12px; margin-top: 2px; color: #FF6B6B; font-weight: 500;">我的</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html> 
